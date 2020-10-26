@@ -1,0 +1,22 @@
+@model Finalproject.Models.Livre
+@using Microsoft.AspNetCore.Http    
+@{
+    ViewData["Title"] = "supprimertablecommande";
+}
+
+
+
+
+
+<h1>Votre Commande est bien fait</h1>
+
+<footer>
+            <div style="background-color:  #282828;
+	background-position: center center;
+	text-shadow: rgb(31, 23, 22) 20px 35px 50px;height: 140px;">
+              <p style="color: white; padding-top: 0.3cm;">User: @Context.Session.GetString("nom_user") @Context.Session.GetString("prenom_user")</p>
+              <p style="color: white;">Email: @Context.Session.GetString("email_user")</p>
+              <p style="color: white;">Panier: <a href="Panier" style="color:aqua">Panier</a></p>
+              <p style="color: white;">Deconnection: <a href="Logout" style="color:aqua">Deconnecxion</a></p>
+            </div>
+</footer>

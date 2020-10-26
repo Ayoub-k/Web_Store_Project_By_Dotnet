@@ -1,0 +1,46 @@
+@model System.Collections.Generic.List<Livre>
+@using Microsoft.AspNetCore.Http    
+@* @inject IHttpContextAccessor httpContext    *@
+
+@{
+    ViewData["Title"] = "Affichierlivres";
+}
+	     <nav class="navbar">
+            <header>
+                <ul class="ulheader">
+                   <li> <a href="Affichierlivres?nomcatalogue=Science">         Science      </a></li>
+                    <li> <a href="Affichierlivres?nomcatalogue=History">            History            </a></li>
+                    <li> <a href="Affichierlivres?nomcatalogue=Programming">      Programming           </a></li>
+                    <li> <a href="Affichierlivres?nomcatalogue=art">              Art           </a></li>
+                    <li> <a href="Affichierlivres?nomcatalogue=Anime">            Anime         </a></li>
+                    <li> <a href="Affichierlivres?nomcatalogue=Novels">           Novels              </a></li>
+                    <li> <a href="Affichierlivres?nomcatalogue=Economie">         Economie              </a></li>
+                    <li> <a href="Affichierlivres?nomcatalogue=Various">          Various              </a></li>
+                    <li> <a href="Affichierlivres?nomcatalogue=religion ">         Religion     </a></li>
+                </ul>
+            </header>
+        </nav>
+
+    <div style="background-color: DarkCyan; width: 92%; margin-left: 60px; border-radius: 40px;">
+		<p style="text-align: center; font-size: 30px;">@ViewBag.type</p>
+	</div>
+
+<table style="
+padding-top: 1cm;
+">  @{int i=0;
+    @while(i<@Model.Count)
+    {
+    int j=0;
+    <tr>
+        @while((j<4 && i< @Model.Count) )
+        {
+            <th style="padding-left: 1.2cm;
+                       padding-top:1.2cm;
+            "><a href="donneeslivre?ID=@Model[i].Id"> <img class="images" src="~/images/science/@Model[i].path"> </a></th>
+            j++;
+            i++;
+        }
+    </tr>
+    }
+    }
+</table> 

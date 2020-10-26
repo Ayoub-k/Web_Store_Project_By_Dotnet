@@ -1,0 +1,70 @@
+@model Finalproject.Models.Livre
+@using Microsoft.AspNetCore.Http    
+
+@{
+    ViewData["Title"] = "donneeslivre";
+}
+
+
+
+<table align="center" style="padding-top: 2cm;">
+    <tr>
+        <th><img src="~/images/science/@Model.path"/> </th>
+        <th> <table>
+                    <tr>
+                        <td>Nom              :</td>
+                        <td>@Model.Nom</td>
+                    </tr>
+                    <tr>
+                        <td>Nbrpage          :</td>
+                        <td>@Model.nbrpage</td>
+                    </tr>
+                    <tr>
+                        <td>La langue        :</td>
+                        <td>@Model.langue</td>
+                    </tr>
+                    <tr>
+                        <td>Prix             :</td>
+                        <td>@Model.prix</td>
+                    </tr>
+                    <tr>
+                        <td>Auteur           :</td>
+                        <td>@Model.autor</td>
+                    </tr>
+                    <tr>
+                        <td>Date d'edition   :</td>
+                        <td>@Model.anne</td>
+                    </tr>
+                    <tr>
+                        <td>Categorie</td>
+                        <td>@Model.nomcatalogue</td>
+                    </tr>
+                </table>
+                </th>
+             
+    </tr>
+</table>
+
+
+
+   <div style="background-color: DarkCyan; width: 92%;margin-left: 60px; border-radius: 40px;"  >
+           <a href="AjoutAupanier"> <p style="text-align: center; font-size: 30px;">AddPanier</p></a>
+        </div>
+        <footer>
+            <div style="background-color:  #282828;
+	background-position: center center;
+	text-shadow: rgb(31, 23, 22) 20px 35px 50px;
+	height: 140px;">
+              <p style="color: white; padding-top: 0.3cm;">User: @Context.Session.GetString("nom_user") @Context.Session.GetString("prenom_user")</p>
+              <p style="color: white;">Email: @Context.Session.GetString("email_user")</p>
+              <p style="color: white;">Panier: <a href="Panier" style="color:aqua">Panier</a></p>
+              <p style="color: white;">Deconnection: <a href="Logout" style="color:aqua">Deconnecxion</a></p>
+            </div>
+    </footer>
+@*<div> style="width:100% ;
+                height: %;
+                border-radius: 10px;
+                position: static;"/>
+            </div> *@
+
+  @* <div style="padding-right: 10%; padding-top: 0.7cm;padding-left: 15%;"> *@

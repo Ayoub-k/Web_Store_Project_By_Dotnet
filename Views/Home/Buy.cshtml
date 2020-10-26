@@ -1,0 +1,53 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+	<nav class="navbar">
+		<header>
+			<ul class="ulheader">
+				<li><a href="/Home/Index"> Welcome </a></li>
+				<li><a href="/Home/Index"> Books </a></li>
+				<li><a href="/Home/Buy"> Buy </a></li>
+				<li><a href="/Home/Index"> Contact </a></li>
+			</ul>
+		</header>
+	</nav>
+              <div style="background-color: DarkCyan; width: 92%;margin-left: 60px; border-radius: 40px;" >
+                    <p style="text-align: center; font-size: 30px;">Buy</p>
+                </div>
+                <div class="shapebook1" style="margin-left: 160px;">
+                    <div>
+                        <p style="text-align: center; color: royalblue;">
+                            Create New Account
+                        </p>
+                        <form action="/Home/Buy1" method="POST">
+                            <input type="text" name="nom"placeholder="First_Name" ><br>
+                            <input type="text" name="prenom" placeholder="Last_name"><br>
+                            <input type="text" name="nombre" placeholder="Phone" pattern="[0-9]{10}"><br>
+                            <input type="text" name="email" placeholder="Eamil"><br>
+                            <input type="password" name="password" placeholder="Password"><br>
+                            <input type="submit" name="send" value="send"><br>
+            
+                        </form>
+                    </div>
+                    <div style="margin-left: 150px;">
+                        <p style="text-align: center; color: royalblue;">
+                                Log In
+                        </p>
+                        <form action="/Home/Login" method="post">
+                            <input type="email" name="textemail" placeholder="Email"><br>
+                            <input type="password" name="textpassword" placeholder="Password"><br>
+                            <input type="submit" name="send" value="send"><br>
+                        </form>
+                    </div>
+                </div>
+        <footer>
+	         <div class="foter">
+			<p style="color: white;">Posted by: Elkhaddouri Ayoub</p>
+			<p style="color: white;">Copyright © 2019</p>
+			<p style="color: white;">
+				Contact information: <a href="ELKHADDOURI@outlook.fr"
+					style="color: aqua">ELKHADDOURI@outlook.fr</a>
+			</p>
+		</div>
+	</footer>

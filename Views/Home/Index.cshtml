@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+	<nav class="navbar">
+		<header>
+			<ul class="ulheader">
+				<li><a href="#welcomme"> Welcome </a></li>
+				<li><a href="#books"> Books </a></li>
+				<li><a href="/Home/Buy"> Buy </a></li>
+				<li><a href="#contact"> Contact </a></li>
+			</ul>
+		</header>
+	</nav>
+	<div class="exact" ></div>
+
+	<div class="exact" id="books"></div>
+	<div
+		style="background-color: DarkCyan; width: 92%; margin-left: 60px; border-radius: 40px;">
+		<p style="text-align: center; font-size: 30px;">Categorie</p>
+	</div>
+	<div class="book">
+		<div class="shapebook">
+			<div>
+				<a href="Home/Affichierlivres?nomcatalogue=Science"> <img src="~/images/science.jpg"
+					alt="" class="images">
+				</a> <br>
+				<p style="text-align: center; color: rgb(231, 108, 129);">Science</p>
+			</div>
+			<div>
+				<a href="Home/Affichierlivres?nomcatalogue=History"> <img src="~/images/History.jpg"
+					alt="" class="images">
+				</a> <br>
+				<p style="text-align: center; color: rgb(231, 108, 129);">History</p>
+			</div>
+			<div>
+				<a href="Home/Affichierlivres?nomcatalogue=Programming"> <img
+					src="~/images/programming.jpg" alt="" class="images">
+				</a> <br>
+				<p style="text-align: center; color: rgb(231, 108, 129);">Programming</p>
+			</div>
+		</div>
+		<div class="shapebook">
+			<div>
+				<a href="Home/Affichierlivres?nomcatalogue=art"> <img src="~/images/art1.png"
+					alt="" class="images">
+				</a> <br>
+				<p style="text-align: center; color: rgb(231, 108, 129);">Art</p>
+			</div>
+			<div>
+				<a href="Home/Affichierlivres?nomcatalogue=Anime"> <img src="~/images/anime.jpg"
+					alt="" class="images">
+				</a> <br>
+				<p style="text-align: center; color: rgb(231, 108, 129);">Anime</p>
+			</div>
+			<div>
+				<a href="Home/Affichierlivres?nomcatalogue=Novels"> <img src="~/images/romans.jpg"
+					alt="" class="images">
+				</a> <br>
+				<p style="text-align: center; color: rgb(231, 108, 129);">Novels</p>
+			</div>
+		</div>
+		<div class="shapebook">
+			<div>
+				<a href="Home/Affichierlivres?nomcatalogue=Economie"> <img src="~/images/bitc.png"
+					alt="" class="images">
+				</a> <br>
+				<p style="text-align: center; color: rgb(231, 108, 129);">Economie</p>
+			</div>
+			<div>
+				<a href="Home/Affichierlivres?nomcatalogue=Various"> <img src="~/images/various.jpg"
+					alt="" class="images">
+				</a> <br>
+				<p style="text-align: center; color: rgb(231, 108, 129);">Various</p>
+			</div>
+			<div>
+				<a href="Home/Affichierlivres?nomcatalogue=Religion"> <img src="~/images/religion.jpg"
+					alt="" class="images">
+				</a> <br>
+				<p style="text-align: center; color: rgb(231, 108, 129);">Religion</p>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="exact" id="contact"></div>
+
+	<div
+		style="background-color: DarkCyan; width: 92%; margin-left: 60px; border-radius: 40px;">
+		<p style="text-align: center; font-size: 30px;">Contact</p>
+	</div>
+	<div style="margin-left: 12cm;">
+		<form action="">
+			<input type="text" name="nom" placeholder="First_Name"><br>
+			<input type="text" name="prenom" placeholder="Last_name"><br>
+			<input type="text" name="nombre" placeholder="Phone"><br> <input
+				type="email"   name="emai" placeholder="Email"><br>
+			<textarea id="subject" name="subject" placeholder="Write something.."
+				style="height: 60px; padding-right: 6.2cm;"></textarea>
+			<br> <input type="submit" name="send" value="send"><br>
+		</form>
+	</div>
+	
+
+
+
+    <footer>
+	    <div class="foter">
+			<p style="color: white;">Posted by: Elkhaddouri Ayoub</p>
+			<p style="color: white;">Copyright © 2019</p>
+			<p style="color: white;">
+				Contact information: <a href="ELKHADDOURI@outlook.fr"
+					style="color: aqua">ELKHADDOURI@outlook.fr</a>
+			</p>
+		</div>
+	</footer>
